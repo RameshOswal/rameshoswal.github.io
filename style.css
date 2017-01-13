@@ -152,7 +152,17 @@ section:last-child {
 	color: #444;
 }
 
-.keySkills ul li {
+.keySkills ol li {
+	margin-bottom: 3px;
+}
+.achievements {
+	list-style-type: none;
+	margin-bottom: 20px;
+	font-size: 1em;
+	color: #444;
+}
+
+.achievements ul li {
 	margin-bottom: 3px;
 }
 
