@@ -44,3 +44,7 @@
 		Enter your Andrew UserID or course number, then click Publish.
 		Note: If a section letter or other text is part of the course number you submitted in your request for a project volume, you must include it in the course number.
  http://www.cmu.edu/computing/services/comm-collab/websites/user-course-web/how-to/publish.html#publish 
+
+
+ # TODO
+ 	## Write about auto-trader project, Portfolio management using Reinforcement Learning
