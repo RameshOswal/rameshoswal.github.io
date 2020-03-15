@@ -1,0 +1,568 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Tony Robinson - Prime Mover Labs -Event 19th-20th of Sept</title><style>
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	opacity: 0.5;
+}
+
+.sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, KaiTi, STKaiTi, '华文楷体', KaiTi_GB2312, '楷体_GB2312', serif; }
+.mono { font-family: Nitti, 'Microsoft YaHei', '微软雅黑', monospace; }
+.pdf .sans { font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+
+.pdf .code { font-family: Source Code Pro, 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, KaiTi, STKaiTi, '华文楷体', KaiTi_GB2312, '楷体_GB2312', serif, 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+
+.pdf .mono { font-family: PT Mono, Nitti, 'Microsoft YaHei', '微软雅黑', monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+
+.highlight-default {
+}
+.highlight-gray {
+	color: rgb(155,154,151);
+}
+.highlight-brown {
+	color: rgb(100,71,58);
+}
+.highlight-orange {
+	color: rgb(217,115,13);
+}
+.highlight-yellow {
+	color: rgb(223,171,1);
+}
+.highlight-teal {
+	color: rgb(15,123,108);
+}
+.highlight-blue {
+	color: rgb(11,110,153);
+}
+.highlight-purple {
+	color: rgb(105,64,165);
+}
+.highlight-pink {
+	color: rgb(173,26,114);
+}
+.highlight-red {
+	color: rgb(224,62,62);
+}
+.highlight-gray_background {
+	background: rgb(235,236,237);
+}
+.highlight-brown_background {
+	background: rgb(233,229,227);
+}
+.highlight-orange_background {
+	background: rgb(250,235,221);
+}
+.highlight-yellow_background {
+	background: rgb(251,243,219);
+}
+.highlight-teal_background {
+	background: rgb(221,237,234);
+}
+.highlight-blue_background {
+	background: rgb(221,235,241);
+}
+.highlight-purple_background {
+	background: rgb(234,228,242);
+}
+.highlight-pink_background {
+	background: rgb(244,223,235);
+}
+.highlight-red_background {
+	background: rgb(251,228,228);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(55, 53, 47, 0.6);
+	fill: rgba(55, 53, 47, 0.6);
+}
+.block-color-brown {
+	color: rgb(100,71,58);
+	fill: rgb(100,71,58);
+}
+.block-color-orange {
+	color: rgb(217,115,13);
+	fill: rgb(217,115,13);
+}
+.block-color-yellow {
+	color: rgb(223,171,1);
+	fill: rgb(223,171,1);
+}
+.block-color-teal {
+	color: rgb(15,123,108);
+	fill: rgb(15,123,108);
+}
+.block-color-blue {
+	color: rgb(11,110,153);
+	fill: rgb(11,110,153);
+}
+.block-color-purple {
+	color: rgb(105,64,165);
+	fill: rgb(105,64,165);
+}
+.block-color-pink {
+	color: rgb(173,26,114);
+	fill: rgb(173,26,114);
+}
+.block-color-red {
+	color: rgb(224,62,62);
+	fill: rgb(224,62,62);
+}
+.block-color-gray_background {
+	background: rgb(235,236,237);
+}
+.block-color-brown_background {
+	background: rgb(233,229,227);
+}
+.block-color-orange_background {
+	background: rgb(250,235,221);
+}
+.block-color-yellow_background {
+	background: rgb(251,243,219);
+}
+.block-color-teal_background {
+	background: rgb(221,237,234);
+}
+.block-color-blue_background {
+	background: rgb(221,235,241);
+}
+.block-color-purple_background {
+	background: rgb(234,228,242);
+}
+.block-color-pink_background {
+	background: rgb(244,223,235);
+}
+.block-color-red_background {
+	background: rgb(251,228,228);
+}
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="f2882c72-f032-46b7-ab23-873fe8057869" class="page sans"><header><h1 class="page-title">Tony Robinson - Prime Mover Labs -Event 19th-20th of Sept</h1></header><div class="page-body"><p id="7dcb3788-a3dd-465e-8fa9-aa22ac22db93" class=""><strong>Books:</strong><div class="indented"><ol id="c898249d-7a69-4241-8aff-138065e14e26" class="numbered-list" start="1"><li>Think and Grow Rich - Napoleon hill<p id="6cc2deae-3d4c-489c-9faa-4de949cd39b4" class="">Take Decision Quickly and move out slowly.</p><p id="fbd9ba38-1fc8-4669-b653-8fc08d9c8927" class="">Procrastination is enemy of innovation.</p><p id="f0fcda02-3957-4b2f-8bee-24d9868fb175" class="">Paralysis of Analysis.</p><p id="985feefe-5307-44a4-b4f1-34570acc8c57" class="">A feeling is a signal of doing something.</p></li></ol><ol id="2ffe2362-8887-4d92-a0be-6313592dc542" class="numbered-list" start="2"><li>Man&#x27;s Search for Meaning - </li></ol></div></p><p id="0f491fab-d999-407c-ab04-6ae30da41096" class=""><strong>What is Breakthrough</strong><div class="indented"><p id="16975f0a-0a39-4aac-ba7a-3e160df4aca6" class="">It is a moment in time when everything changes - where what seemed to be impossible suddenly becomes possible and where you no longer settle for anything less than extraordinary.</p><p id="ecace8f5-6738-4f6a-82f7-bd3790dc8cae" class="">Breakthroughs are the reason people succeed and companies thrive, no matter what going on around them.</p><p id="dd8c1242-76af-40b6-84e5-8bf3368040ef" class="">Common Breakthroughs: Procastination, overconfidence, under confidence, gym, bike, cook etc.</p><p id="e7f08ea9-888a-4fc1-b719-abc732abedbe" class="">My Breakthroughs: Spending time with family, do something for myself, tech/sports/longtime etc.</p></div></p><p id="63f69a5f-cdaf-4cba-91fd-8fd4246fdf1a" class="">Taking Notes:<div class="indented"><p id="a1c4c0cd-00dc-4567-ac95-92f62b24b960" class="">Take notes by pen and paper then convert to digital notes.</p></div></p><p id="a9f64f39-ba15-4df6-a7b8-b9fa251661ea" class="">Growth: <div class="indented"><p id="520b5a35-fc04-43a7-a302-718b4ef18a76" class=""><strong><em>Something what is not growing in nature dies. Growth happens outside your comfort zone.</em></strong></p></div></p><p id="87281493-7291-4f2f-8d85-d8a30ff6846f" class="">Beliefs System:<div class="indented"><p id="bc07f9d4-0521-4e2f-a78a-4dfca25d4f92" class="">&quot;Beliefs gave the power to create and the power to destroy. Human being have the awesome ability yo take any experience of their lives and create a meaning that disempowers them, or one that can literally save their lives.&quot; - Tony Robbins.</p></div></p><p id="93b79507-ed82-4ee8-837b-0d76f72a6146" class=""><strong>Random Though: How to tell Stories: The art of storytelling.</strong></p><p id="277848d4-b513-4a76-aa7e-6062fdc92bc0" class="">What is a belief:<div class="indented"><p id="3d6df3ff-0602-4f4a-8b4e-bd6d0620d47f" class="">A belief is a feeling of absolute certainty that something is true or real. This is based on the individuals&#x27; model of the world.</p><p id="538d0db5-bf8c-440f-bc28-2dd465e90eec" class="">A belief is shaped by people around you, trauma, books, knowledge, school, family, religion.</p><p id="589913e9-6adc-4ab3-9dec-fe38503b2549" class="">tall poppy syndrome - a perceived tendency to discredit or disparage those who have achieved notable wealth or prominence in public life - <a href="https://en.wikipedia.org/wiki/Tall_poppy_syndrome">Wikipedia</a></p><p id="b653e81b-5b3b-4d84-b3bf-8d34660b3eb6" class="">These beliefs run patterns that form what we call a belief cycle. Some cycles support our success, while others can derail even the most driven intentions.</p></div></p><p id="b9355863-40f8-4d5f-9499-60eb6f1ff617" class="">Whatever the mind can conceive and believe, it can achieve regardless of how many times you may have failed in the past. - Napoleon Hill</p><p id="13086073-bd62-4165-8ff2-6ecdb07cf34b" class=""><strong>Random Thought: Demon in the bottle inspired Iron Man for Robert Downey Jr.</strong></p><p id="9872e471-6f0b-482b-a530-7859ba0c17ca" class="">The Belief Cycle:<div class="indented"><p id="d5f0210c-8ccf-4132-8c7c-bc345c4ec2d9" class="">Belief —&gt; ? —&gt; Actions —&gt; Result —&gt; Belief</p></div></p><p id="5c8be621-9d10-4bbb-939f-974c6713420c" class=""><strong>Where your FOCUS goes your ENERGY will flow - Tony Robbins</strong></p><p id="69b2da25-f5c3-4e05-a9a3-2136cd4d6e2a" class=""><strong>Stop being afraid of what can go wrong and start being excited about what can go right! - TR</strong></p><p id="e6f3b46b-b651-45c3-b540-b0cee3628d6f" class=""><strong>Story:</strong><div class="indented"><p id="ceac6dd4-40aa-4343-9ef8-1a8df0b1f83e" class="">Our personal narrative helps or hinders us from achieving our goal. We all have stories about why we can or cannot achieve something in life.</p><p id="84d8899e-1198-4183-beaf-fc54e3e85e00" class="">When you change your story you change your life. People  who succeed don&#x27;t develop stories about why they can&#x27;t do something. Their stories are about how they WILL achieve their goals no matter what.</p><ol id="26e6f2fc-83b5-4ab9-8a1c-50bb126490b9" class="numbered-list" start="1"><li>Theme or Title of your story thus far: <strong>Family, Friends Work that&#x27;s it!</strong></li></ol><ol id="d37f94f8-c4d9-433d-8c22-ecd2948554ac" class="numbered-list" start="2"><li>If writing a book of your life, title?: <strong>How to serve people best!</strong></li></ol><p id="faa85738-3187-49d0-9326-c9f9d9867c92" class="">How has this story served and cost you?<div class="indented"><p id="fa7f25cb-9e26-4340-9e47-cf5c4330e5b1" class="">Always had someone next to me - friends, family work colleagues, always had someone to share with.</p><p id="8bb959d2-ebdb-4d10-ae7a-6da647a3720e" class="">Cost - Couldn&#x27;t give time to myself.</p></div></p></div></p><p id="4a5dc783-eeb2-40b1-b0f5-e035ab004894" class="">There are 2k Emotion in humans</p><p id="7eb73cb0-c05c-43f3-b913-64720617f10d" class=""><strong>You choose the story(emotions) you want to define.</strong></p><p id="7ab6115d-bd9a-4792-a825-59a55d936f12" class=""><strong>Change your story change your life - TR</strong></p><p id="ffefaa71-8d50-4df0-91fe-6b2b876c5e97" class=""><strong>Change your strategy, change your result. Change your story, change your life. Change your state - Change it all!</strong></p><h3 id="f7809f3b-67da-4a38-8cb1-231ce7c88b04" class=""><strong>The Triad</strong></h3><ol id="49ae65f9-03b8-4e9c-b899-315688cca0df" class="numbered-list" start="1"><li><strong>Physiology -</strong><ol id="0f5bf322-d7cd-4b99-a19a-95317b1383bc" class="numbered-list" start="1"><li>Drinking water, meditation for 30 seconds, Small walks, stands/sitdown, run.</li></ol><ol id="4683bcb8-5d9b-44ad-81c0-2545569e42c2" class="numbered-list" start="2"><li>mediation - 1 4 2 rule, breathe in for 5 seconds, hold for 20secs &amp; breathe our for 10secs.</li></ol><ol id="054f21e4-7607-4b5b-8a19-4a61f9c3cc75" class="numbered-list" start="3"><li>Do Complicated things first, life looks easy after that. Go for a run and then walk looks easy.</li></ol></li></ol><ol id="3f510eac-e1cf-4f78-8580-ad70ed0789d3" class="numbered-list" start="2"><li><strong>Focus -</strong><ol id="86e148e8-54c5-4f22-b476-79cabf465b3a" class="numbered-list" start="1"><li>Create a vision board for Work, Tech, My Life</li></ol><ol id="77b972c8-9bf4-471e-a6ac-4c6da24d0250" class="numbered-list" start="2"><li>human mind receives 2M bits per second. It can only process 7+-2 (max ~135 recently) rest of info is either Distorted, Deleted or Generalized.</li></ol></li></ol><ol id="0f1e4bdc-d098-4d75-85e1-1918a122fbe0" class="numbered-list" start="3"><li><strong>Language/Meaning:</strong><p id="4dfe3668-cdcc-4240-9ce5-d2429272f84b" class="">Power Posing - <a href="https://www.ted.com/talks/amy_cuddy_your_body_language_shapes_who_you_are?language=en"><strong>Amy </strong></a><strong>Cuddy - Your body language may change shape what you are</strong>.<div class="indented"><p id="0f4f9ede-ef73-43b3-bd23-d294b17fb6fd" class="">Diff between powerful and powerless people:</p><p id="6f1d02bd-b6f5-4efc-984d-52188e129f9f" class="">Powerful people are more confident, optimistic, dominant, risk taking. think will win even in a game of chance, also think abstractly.</p><p id="949dec44-11f0-4618-9d62-198ffb403179" class="">Physiological - key hormones Testosterone(dominance) and cortisol(stress)</p><p id="9920727d-b054-4f91-8ca4-8e7ee5bb8ed7" class="">Powerful - High Testosterone and low cortisol. power is also about how you react to stress.</p></div></p><p id="e0d7ee70-4ba3-4021-a3c3-8a77367f8e29" class="">Incantation:<div class="indented"><p id="d832b686-59fa-4241-8b0e-9946ed0ed98a" class="">&quot;I&#x27;m&quot; Mohammed Ali example</p><p id="308a0b0b-bdec-4692-bd4a-07ccb457df3e" class="">&quot;Mein Mast(awesome) hu&quot; and &quot;Lets do it&quot;.</p></div></p></li></ol><p id="46815fe0-3c08-4ae7-8e62-63e42d9d93b9" class="">name to triad?</p><p id="655742c2-3d9f-4a30-b34b-920490cd9e00" class=""><strong>What&#x27;s bad is always present &amp; so is good, you just have to choose to focus on - TR</strong></p><p id="3ade71cb-ead8-4953-b485-1b8eb2f83c71" class="">Penn and Teller on Vaccination - <a href="https://www.youtube.com/watch?v=RfdZTZQvuCo">https://www.youtube.com/watch?v=RfdZTZQvuCo</a></p><p id="32371760-d47b-404c-aaef-0968a09c2ae1" class="">Tmobil story on bankruptcy to market leader<div class="indented"><p id="377229ae-246b-4366-a04b-47eadc72b8f0" class=""><strong>Be the Tip of the Sphere:</strong><div class="indented"><p id="d0edc435-fba3-4b91-a1ed-856faf0da188" class="">sphere which pierces into something to break, we should be the tip of it.</p></div></p><p id="4e732218-b67b-4880-bdbd-1c26ef84dbed" class=""><strong>Stay Scrappy stay hungry</strong></p></div></p><p id="53a5c173-6117-4a74-9fa1-8c69eae6e1e2" class="">It takes 23 minutes to get deep focus on something so focus on something before meeting/working etc. </p><p id="0ff133af-a877-4456-befd-e28a19a2a52a" class="">Try some back posture apps.</p><p id="06d6479e-18e3-46ef-8d1d-63af6b521112" class=""><strong>Focus equals Reality even if it is not reality in actuality - TR</strong></p><p id="7aab1eae-49cd-4dee-bbd8-aa98ada1f6cc" class="">Classify Every Decision using follow criteria:<div class="indented"><p id="d3cd2830-51dd-4701-a6a2-957a00618e69" class="">Feels Good, Good for you, Good for greater good.</p></div></p><p id="43d748e8-fd44-4dea-a6f0-788c149ca8d4" class="">Hypnosis experiment at Mall of America:<div class="indented"><p id="b0cd3502-fa47-4618-94e7-bd6729f93032" class=""><a href="https://www.youtube.com/watch?v=II2aT9L0Sx8">https://www.youtube.com/watch?v=II2aT9L0Sx8</a></p></div></p><p id="c7c4581b-db5f-40fb-a9b4-be4055f1f266" class=""><strong>Rapid Planning Method:</strong><div class="indented"><p id="fb786b90-70a9-4b85-8a3e-0f5611f7bf55" class="">90 day action plan - keep it small so that you can iterate if needed.</p><p id="ee577b68-7ca9-468c-ac2e-60f99f2c3acf" class=""><strong>SMART Goals: Specific, Measurable, Actionable, Realistic, Time Defined</strong></p></div></p><p id="84736666-5772-44cf-a0f2-b22ad398563c" class="">
+</p><h3 id="13561dc7-a393-46ec-b6c6-06541653f565" class="">Value Chain:</h3><p id="6cda0da3-3a39-41ef-9b06-5f94dd5f4a9b" class=""><strong> Customer go away, Clients stay.</strong></p><p id="30cd8ef6-1026-4e38-a567-53f90228df20" class=""><strong>Every Problem is an Opportunity.</strong></p><p id="1ce1fff3-80bd-40a1-a184-72eeca84094d" class="">UCLA Hospital Story - David Fibre.</p><p id="54de00ce-78da-4827-bb94-9f3855ff6f6e" class=""><strong>Add a Significant Value, consistently and effective, results. Clarify &amp; Verfiy and Evidence Procedure.</strong></p><p id="21e31d8d-413c-4f9f-8e56-31dc9db517f9" class=""><strong>Receive intelligently and actively</strong></p><p id="375b88fc-158b-4f83-835f-a0f283708c6f" class="">What makes lousy? <div class="indented"><p id="2946705d-93f1-463d-8cbc-75127a062f5d" class="">Unconscious, Distracted, &quot;I know what you want.&quot;</p></div></p><p id="cdfff317-9c84-4412-a53f-54bcfa4bc805" class=""><strong>Losers react Leaders anticipate</strong></p><p id="6f4daeef-bfb5-4380-88b5-8ae3528f70be" class="">Thats not my job → Fire people who say this</p><p id="7e60d820-d4ad-405f-82bd-e8339d747197" class="">Who is the customer ? Everyone e.g. Product buyer, Contractor, Colleague, Manager, Janitor etc.</p><p id="83c00c1a-dc07-4925-bff1-34b36e500988" class=""><strong>RPM - Results - Purpose - Massive Action Plan</strong><div class="indented"><p id="79fcccfa-3b89-48d2-aec0-fd1465f06902" class="">Try to define these three attributes for any goal/work/task you have. This would simplify your goal setting, and make it easy to prioritize.</p></div></p><p id="3b5f3e52-9ea4-477d-b9a1-7340e905b97c" class=""><strong>NET - Net enough time</strong><div class="indented"><p id="68534c81-7f9b-4463-b15e-94bdf9ee972a" class="">Read In PDF.</p><p id="e2d6c89e-66c6-4234-95da-c4d5112dabce" class="">
+</p></div></p><p id="a83a152e-440f-4df2-8b00-19e8cfb7a33c" class="">More about Value Chain and its importance.</p><p id="19ee1578-f515-4eca-9e14-51436666f03a" class="">
+</p></div></article></body></html>
